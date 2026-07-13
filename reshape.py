@@ -11,3 +11,18 @@ print(b)
 print(c)
 
 d = np.reshape(a, shape=(3, 4), order='C')
+
+ # Transposing an array
+
+y = np.arange(6).reshape(2,3)
+y1 = y.T
+
+print(y1)
+
+#Flattening and Reshaping
+
+x = np.arange(12).reshape(3,1,4)
+xflat = x.flatten() # does not affect original array
+xravel = x.ravel() #  can affect the original (view, when possible).
+
+print(xflat)

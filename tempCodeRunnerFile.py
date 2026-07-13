@@ -1,7 +1,12 @@
 import numpy as np
 
-array = np.array([[1,2,3,4,5],
-                  [6,7,8,9,10]])
+a = np.array([1,1,2,2,4,5,8,8,8,9,0,0])
 
-array2 = np.zeros(2,2)
-print(array2)
+b, c = np.unique(a, return_counts=True)
+
+print(b)
+print(c)
+
+# to print this asa dict
+
+print(dict(zip(b,c)))
